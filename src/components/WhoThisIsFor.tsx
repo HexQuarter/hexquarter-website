@@ -26,8 +26,7 @@ const WhoThisIsFor = () => {
         </ul>
         <div className="mt-12 pt-8 border-t border-border">
           <p className="hex-small">
-            If you're looking for a general blockchain agency, token launches, or NFT projects—we're not the right fit. 
-            We focus exclusively on Bitcoin.
+            While having intensive expertize on general blockchain technology, token and NFT project, we focus exclusively on Bitcoin.
           </p>
         </div>
       </div>

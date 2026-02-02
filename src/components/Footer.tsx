@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground font-mono">
-            © {new Date().getFullYear()} HexQuarter. Bitcoin-only.
+            © {new Date().getFullYear()} HexQuarter. <span className="text-primary">Bitcoin-only</span>.
           </p>
         </div>
       </div>

@@ -12,9 +12,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
+      <main className="flex flex-col gap-10">
         <Hero />
-        <div className="hex-divider hex-container" />
         <Positioning />
         <WhyBitcoin />
         <HowBitcoinIsUsed />
