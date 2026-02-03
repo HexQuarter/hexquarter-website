@@ -2,7 +2,7 @@ const Approach = () => {
   const principles = [
     {
       principle: "Architecture first",
-      detail: "We determine where Bitcoin belongs in your system—and where it doesn't. Not every problem needs a blockchain."
+      detail: "We determine where Bitcoin belongs in your system and where it brings value."
     },
     {
       principle: "L1 vs L2 intent",

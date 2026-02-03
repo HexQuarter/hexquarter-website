@@ -7,9 +7,7 @@ const Footer = () => {
             <p className="font-mono text-sm font-medium text-foreground mb-1">
               HexQuarter
             </p>
-            <p className="text-sm text-muted-foreground">
-              Bitcoin-native engineering
-            </p>
+            <a href="/about" className="text-sm text-muted-foreground">About</a>
           </div>
           <div className="flex items-center gap-8">
             <a 
