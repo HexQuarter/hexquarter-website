@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <motion.footer 
+    <motion.footer
       className="py-12 border-t border-border relative overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -15,7 +15,7 @@ const Footer = () => {
         animate={{ opacity: [0.3, 0.7, 0.3] }}
         transition={{ duration: 3, repeat: Infinity }}
       />
-      
+
       <div className="hex-container">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <motion.div
@@ -27,22 +27,31 @@ const Footer = () => {
             <p className="font-mono text-sm font-medium text-foreground mb-1">
               HexQuarter
             </p>
-            <motion.a 
-              href="/about" 
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-              whileHover={{ x: 3 }}
-            >
-              About
-            </motion.a>
+            <div className="flex flex-col mt-5">
+              <motion.a
+                href="/about"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                whileHover={{ x: 3 }}
+              >
+                About
+              </motion.a>
+              <motion.a
+                href="/blog"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                whileHover={{ x: 3 }}
+              >
+                Blog
+              </motion.a>
+            </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="flex items-center gap-8"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <motion.a 
+            <motion.a
               href="mailto:build@hexquarter.com"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
               whileHover={{ scale: 1.02 }}
@@ -57,7 +66,7 @@ const Footer = () => {
             </motion.a>
           </motion.div>
         </div>
-        <motion.div 
+        <motion.div
           className="mt-8 pt-8 border-t border-border"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -65,9 +74,9 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="text-xs text-muted-foreground font-mono">
-            © {new Date().getFullYear()} HexQuarter. <motion.span 
+            © {new Date().getFullYear()} HexQuarter. <motion.span
               className="text-primary inline-block"
-              animate={{ 
+              animate={{
                 textShadow: [
                   "0 0 0px hsl(var(--primary))",
                   "0 0 10px hsl(var(--primary))",
@@ -76,7 +85,7 @@ const Footer = () => {
               }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              Bitcoin-only
+              Bitcoin-only engineering firm
             </motion.span>.
           </p>
         </motion.div>
