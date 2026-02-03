@@ -36,7 +36,7 @@ const BlogDetails = () => {
 
         const article = {
           id: e.id,
-          date: new Date(e.created_at),
+          date: new Date(e.created_at * 1000),
           title: tagsMap.get('title'),
           image: tagsMap.get('image'),
           summary: tagsMap.get('summary'),
