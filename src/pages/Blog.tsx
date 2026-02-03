@@ -109,7 +109,7 @@ const Blog = () => {
           </div>
         </section>
         <div className="bg-card ">
-          <div className="grid grid-cols-2 gap-10 hex-container p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 hex-container p-10">
             {articles.map((a, i) => (
               <article key={a.id}>
                 <AnimatedCard className="h-full p-6 bg-background/50 border border-border rounded-lg backdrop-blur-sm ">
