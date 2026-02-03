@@ -16,7 +16,7 @@ const Hero = () => {
   const videoY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.8, 0.95]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const contentY = useTransform(scrollYProgress, [0, 0], ["0%", "50%"]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const orb1Y = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
   const orb2Y = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
@@ -45,7 +45,7 @@ const Hero = () => {
         className="absolute inset-0 bg-black"
         style={{ opacity: overlayOpacity }}
       />
-      
+       
       {/* Floating orbs with parallax */}
       <motion.div style={{ y: orb1Y }}>
         <FloatingOrb className="top-20 -left-20" size="lg" delay={0} />
@@ -81,7 +81,7 @@ const Hero = () => {
           </h1>
           
           <motion.p 
-            className="hex-body max-w-2xl mb-8 text-gray-100 text-sm"
+            className="hex-body max-w-2xl mb-8 text-gray-100 text-medium"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
@@ -91,7 +91,7 @@ const Hero = () => {
           </motion.p>
           
           <motion.p 
-            className="text-xs text-muted-foreground font-mono"
+            className="text-sm text-muted-foreground font-mono"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
