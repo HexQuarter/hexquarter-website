@@ -43,8 +43,7 @@ const Positioning = () => {
         >
           <AnimatedSection delay={0.6}>
             <p className="hex-body max-w-2xl">
-              We build the second kind. Products where Bitcoin provides the security model, 
-              not just the payment rail.
+              We build the second kind. <br />Products where Bitcoin provides <span className="text-white">not just the payment rail,</span>  but< br/>the <span className="text-primary">security model</span> 
             </p>
           </AnimatedSection>
         </motion.div>

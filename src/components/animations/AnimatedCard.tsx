@@ -25,7 +25,7 @@ const AnimatedCard = ({
     >
       {glowOnHover && (
         <motion.div
-          className="absolute -inset-px rounded-lg bg-gradient-to-r from-primary/0 via-primary/20 to-primary/0 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500"
+          className="absolute -inset-px rounded-lg border-white border-1 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500"
           aria-hidden="true"
         />
       )}

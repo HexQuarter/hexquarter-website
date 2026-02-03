@@ -16,7 +16,7 @@ const Hero = () => {
   const videoY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.8, 0.95]);
-  const contentY = useTransform(scrollYProgress, [0, 0], ["0%", "50%"]);
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const orb1Y = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
   const orb2Y = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);

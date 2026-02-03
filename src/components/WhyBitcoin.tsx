@@ -50,7 +50,7 @@ const WhyBitcoin = () => {
         <AnimatedSection>
           <p className="hex-tag">Why Bitcoin</p>
           <h2 className="hex-heading max-w-xl">
-            We've built on altchains. We stopped.
+            We've built on altchains. < br />We stopped.
           </h2>
           <p className="hex-body max-w-2xl mb-12">
             After a decade of building on various protocols, we chose Bitcoin for production systems. 
