@@ -1,11 +1,4 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Positioning from "@/components/Positioning";
-import WhyBitcoin from "@/components/WhyBitcoin";
-import HowBitcoinIsUsed from "@/components/HowBitcoinIsUsed";
-import Approach from "@/components/Approach";
-import WhoThisIsFor from "@/components/WhoThisIsFor";
-import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 import Founder from "../../public/founder.webp"

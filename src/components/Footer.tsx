@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,20 +29,18 @@ const Footer = () => {
               HexQuarter
             </p>
             <div className="flex flex-col mt-5">
-              <motion.a
-                href="/about"
+              <motion.div
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 whileHover={{ x: 3 }}
               >
-                About
-              </motion.a>
-              <motion.a
-                href="/blog"
+                <Link to='/about'>About</Link>
+              </motion.div>
+              <motion.div
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 whileHover={{ x: 3 }}
               >
-                Blog
-              </motion.a>
+                <Link to='/blog'>Blog</Link>
+              </motion.div>
             </div>
           </motion.div>
           <motion.div

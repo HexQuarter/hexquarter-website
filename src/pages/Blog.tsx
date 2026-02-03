@@ -19,14 +19,6 @@ import { ArrowRightCircle } from "lucide-react";
 const pool = new SimplePool()
 const relays = ['wss://cache2.primal.net/v1', 'wss://nos.lol/', 'wss://nostr.mom/', 'wss://nostrelites.org/', 'wss://relay.damus.io/', 'wss://wot.nostr.party/']
 
-type Article = {
-  title: string
-  content: string
-  date: Date
-  summary: string
-  image: string
-}
-
 type ArticleItem = {
   id: string,
   title: string
@@ -34,7 +26,6 @@ type ArticleItem = {
   summary: string
   image: string
 }
-
 
 const Blog = () => {
 

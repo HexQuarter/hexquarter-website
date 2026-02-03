@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 import { SimplePool } from '@nostr/tools/pool'
 import { useEffect, useRef, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Markdown from 'react-markdown';
 import { ArrowLeft, ArrowLeftCircle } from "lucide-react";
 
@@ -24,7 +24,6 @@ const BlogDetails = () => {
 
   const [article, setArticle] = useState<Article | undefined>(undefined)
   const ran = useRef(false);
-  const navigate = useNavigate()
 
   useEffect(() => {
     const loadEvents = async () => {
@@ -64,7 +63,7 @@ const BlogDetails = () => {
           <div className="hex-container">
             {article &&
               <div>
-                <a href="/blog"><ArrowLeftCircle className="text-primary" /></a>
+                <Link to="/blog"><ArrowLeftCircle className="text-primary" /></Link>
                 <h2 className="hex-tag">{article.date.toDateString()}</h2>
                 <div className="lg:grid lg:grid-cols-2 flex flex-col">
                   <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight mb-8 flex items-center">{article.title}</h1>
