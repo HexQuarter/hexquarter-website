@@ -91,7 +91,7 @@ const Hero = () => {
           </motion.p>
           
           <motion.p 
-            className="text-xs text-muted-foreground font-mono"
+            className="text-xs text-muted-foreground font-mono mb-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
@@ -110,6 +110,31 @@ const Hero = () => {
               Bitcoin-only
             </motion.span> engineering firm. 
           </motion.p>
+          
+          <motion.a
+            href="mailto:build@hexquarter.com"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm font-medium rounded-sm relative overflow-hidden group"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            {/* Shine effect */}
+            <motion.span
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full"
+              animate={{ translateX: ["−100%", "200%"] }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+            />
+            <span className="relative z-10">Start a conversation</span>
+            <motion.span 
+              className="relative z-10"
+              animate={{ x: [0, 4, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            >
+              →
+            </motion.span>
+          </motion.a>
         </div>
       </motion.div>
       
