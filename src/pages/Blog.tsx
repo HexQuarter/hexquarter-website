@@ -79,33 +79,6 @@ const Blog = () => {
           <div className="hex-container">
             <h2 className="hex-tag">Blog</h2>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight mb-8">Insights on Bitcoin engineering</h1>
-
-            {/* <div className="grid md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="font-mono text-sm font-medium text-foreground mb-3 text-primary">
-                  Build to the Bitcoin Standard
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Bitcoin isn’t just digital gold—it’s a foundation. We use it as the base security and settlement layer for products that need durability, neutrality, and global reach.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-mono text-sm font-medium text-foreground mb-3 text-primary">
-                  Leverage the most secure network
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  The most decentralized, battle-tested network is your best security partner. We anchor critical events on Bitcoin, so integrity isn’t a promise—it’s enforced.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-mono text-sm font-medium text-foreground mb-3 text-primary">
-                  Security layer for data and financial trust
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Treat Bitcoin as the trust engine. Verifiable records on L1 provide tamper-evident history; your app and data services inherit provable integrity.
-                </p>
-              </div>
-            </div> */}
           </div>
         </section>
         <div className="bg-card ">
